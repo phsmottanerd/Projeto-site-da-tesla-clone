@@ -1,0 +1,100 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+video, .img-tesla {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.logo {
+    filter: brightness(100%);
+    position: fixed;
+    width: 400px;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+p{
+
+font-size: 20px;
+
+}
+.item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    z-index: 0;
+}
+
+h1 {
+    color: white;
+    font-size: 80px;
+}
+
+.sub-titulo {
+    color: white;
+}
+
+.info-carro {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.rodape {
+    text-align: center;
+}
+
+button {
+    background-color: rgba(34, 34, 34, 0.8);
+    color: white;
+    padding: 7px 80px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.test-drive {
+    color: black;
+    background-color: white;
+}
+
+.texto-rodape {
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.formulario {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    width: 80%;
+    max-width: 600px;
+    height: 80%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    overflow-y: auto;
+    display: none;
+}
